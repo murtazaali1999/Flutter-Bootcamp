@@ -61,14 +61,17 @@ class _MyHomePageState extends State<MyHomePage> {
           height: double.infinity,
           width: double.infinity,
           alignment: AlignmentGeometry.xy(0, 0), //0,0 is center
-          padding: EdgeInsets.all(20.0),
+          padding: EdgeInsets.all(20.0), //padding
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(25),
-            color: const Color.fromARGB(255, 40, 26, 80),
+            color: const Color.fromARGB(255, 112, 97, 248),
           ),
           child: Text(
-            "Counter--> $_counter",
-            style: TextStyle(color: Colors.redAccent, fontSize: 24),
+            "Counter: $_counter",
+            style: TextStyle(
+              color: const Color.fromARGB(255, 255, 161, 161),
+              fontSize: 24,
+            ),
           ),
         ),
       ),
@@ -77,8 +80,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: FloatingActionButton(
           onPressed: _incrementCounter,
           tooltip: 'Increment',
-          backgroundColor: Colors.amber,
+          backgroundColor: const Color.fromARGB(255, 94, 180, 206),
           hoverColor: Colors.pinkAccent,
+          mouseCursor: MouseCursor.uncontrolled,
           child: Text("Press Me"),
         ),
       ),
